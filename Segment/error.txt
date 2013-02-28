@@ -1,0 +1,11 @@
+"Compile++ thumb : testcpp <= test.cpp
+
+"Compile++ thumb : testcpp <= test.cpp
+"Compile++ thumb : testcpp <= test.cpp
+SharedLibrary  : libtestcpp.so
+"Compile++ thumb : testcpp <= test.cpp
+"Compile++ thumb : testcpp <= test.cpp
+"Compile++ thumb : testcpp <= test.cpp
+"Compile++ thumb : testcpp <= test.cpp
+SharedLibrary  : libtestcpp.so
+"Compile++ thumb : testcpp <= test.cpp

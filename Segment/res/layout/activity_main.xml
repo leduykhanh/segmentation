@@ -1,0 +1,154 @@
+
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="14"
+        android:layout_centerVertical="false"
+         >
+ <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" >
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          	android:orientation="vertical"
+          	android:background="@drawable/border"
+            >
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border">
+            
+	            <Button
+	                android:id="@+id/open"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="3"
+	                android:background="@drawable/open" />
+	             <Button
+	                android:id="@+id/save"
+	                style="?android:attr/buttonStyleSmall"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="3"
+	                android:background="@drawable/save" />
+	             <Button
+	                android:id="@+id/clear"
+	                style="?android:attr/buttonStyleSmall"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="3"
+	                android:background="@drawable/clear" />
+	
+
+            </LinearLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+	             <Button
+	                android:id="@+id/background"
+	                style="?android:attr/buttonStyleSmall"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="3"
+	                android:background="@drawable/iback" />
+	            <Button
+	                android:id="@+id/foreground"
+	                style="?android:attr/buttonStyleSmall"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="3"
+	                android:background="@drawable/ifore" />
+	             <Button
+	                android:id="@+id/eraser"
+	                style="?android:attr/buttonStyleSmall"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="3"
+	                android:background="@drawable/eraser" />
+
+			</LinearLayout>
+			<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+	            <Button
+	                android:id="@+id/seeds"
+	                style="?android:attr/buttonStyleSmall"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="3"
+	                android:text="Seeds" />
+	             <Button
+	                android:id="@+id/image"
+	                style="?android:attr/buttonStyleSmall"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="3"
+	                android:text="Image" />
+	            <Button
+	                android:id="@+id/segment"
+	                style="?android:attr/buttonStyleSmall"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="3"
+	                android:background="@drawable/play" />
+
+			</LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+             
+			    <RadioGroup
+			        android:id="@+id/radioMethod"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content" >
+			 
+			        <RadioButton
+			            android:id="@+id/grabCut"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="Grab Cut" 
+			            android:checked="true" />
+			 
+			        <RadioButton
+			            android:id="@+id/randomWalk"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="Random Walks" />
+			 
+			    </RadioGroup>
+            </LinearLayout>
+			<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView 
+                android:id="@+id/statusTex"
+                android:text="Welcome"
+                android:textSize="40sp"
+                android:textColor="#FFF000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            </LinearLayout>
+        </LinearLayout>
+	</LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="11"
+            android:background="@drawable/imgae_border" >
+		        <com.example.segment.DrawView
+		        android:id="@+id/DrawView1"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true" />
+		        </LinearLayout>
+
+    </LinearLayout>
